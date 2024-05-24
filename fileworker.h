@@ -4,10 +4,10 @@
 class filehandler final {
 
 public:
-	void sort_file(const std::string&) const;
+	static void sort_file(const std::string&);
 
-	void merge_files(const std::string&, const std::string&, const std::string&) const;
+	static void merge_files(const std::string&, const std::string&, const std::string&);
 
-	void clear_file(const std::string&) const;
+	static void clear_file(const std::string&);
 
 };

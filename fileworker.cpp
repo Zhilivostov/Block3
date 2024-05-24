@@ -3,7 +3,7 @@
 #include <set>
 
 
-void filehandler::sort_file(const std::string& filename) const
+void filehandler::sort_file(const std::string& filename)
 {
     if (!filename.empty())
     {
@@ -23,7 +23,7 @@ void filehandler::sort_file(const std::string& filename) const
     }
 }
 
-void filehandler::merge_files(const std::string& hard_mem, const std::string& ram, const std::string& fileout) const
+void filehandler::merge_files(const std::string& hard_mem, const std::string& ram, const std::string& fileout)
 {
     if ((!hard_mem.empty()) && (!ram.empty()) && (!fileout.empty()))
     {
@@ -58,8 +58,8 @@ void filehandler::merge_files(const std::string& hard_mem, const std::string& ra
     }
 }
 
-void filehandler::clear_file(const std::string& filename) const
+void filehandler::clear_file(const std::string& filename)
 {
     if (!filename.empty())
-        remove(filename.c_str()); // потоки закрыты, поэтому по-другому файлы не удалить(c_str преобразует стринг в с-строку)
+        remove(filename.c_str()); // ДЏГ®Е€Г®Д™ДЌ Г§Е•Д™Д‘Е±Е€Е±, ДЏГ®ГЅЕ€Г®Д›Гі ДЏГ®-Г¤Д‘ГіДѓГ®Д›Гі ГґЕ•Г©Г«Е± Г­Дє ГіГ¤Е•Г«ДЌЕ€Гј(c_str ДЏД‘ДєГ®ГЎД‘Е•Г§ГіДєЕ€ Е„Е€Д‘ДЌГ­Дѓ Гў Е„-Е„Е€Д‘Г®Д™Гі)
 }
